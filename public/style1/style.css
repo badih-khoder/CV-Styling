@@ -1,0 +1,187 @@
+    body {}
+    
+    header {
+        background-color: grey;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    header div {
+        display: flex;
+        flex-direction: row;
+        color: red;
+        margin-left: 100px;
+    }
+    
+    dt {
+        background-color: red;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 100%;
+        margin-left: 0px;
+    }
+    
+    dd {
+        background-color: black;
+        color: red;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .contacts {
+        position: absolute;
+        top: 0%;
+        right: 10%;
+    }
+    
+    section {
+        width: 40%;
+    }
+    
+    .content {
+        padding: 60px 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .skills-primary::before {
+        content: "Main";
+    }
+    
+    .skills-secondary::before {
+        content: 'Other';
+    }
+    
+    .skills-secondary span {
+        opacity: 0.4;
+    }
+    
+    .experience-type {
+        font-weight: bold;
+        color: red;
+    }
+    
+    .experience-institution {
+        color: red;
+        font-weight: lighter;
+    }
+    
+    .experience-location {
+        opacity: 0.5;
+    }
+    
+    .content .experience-institution::before {
+        content: "@";
+        color: red;
+    }
+    
+    .day {
+        opacity: 0.5;
+    }
+    
+    .month {
+        opacity: 0.5;
+    }
+    
+    .year {
+        opacity: 0.5;
+    }
+    
+    .experience-location::before {
+        content: "In";
+    }
+    
+    #contact h3 {
+        display: none;
+    }
+    
+    .skill {
+        background-color: rgb(209, 209, 209);
+        width: 100%;
+        margin: 3px;
+        padding: 5px;
+    }
+    
+    .skill span {
+        background-color: red;
+        display: inherit;
+        padding: 5px;
+        color: white;
+    }
+    
+    section>h3::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background-color: red;
+    }
+    
+    h3 {
+        border-bottom: 1px solid grey;
+    }
+    
+    div[data-skill="5"]>span {
+        width: calc(50% - 2%);
+    }
+    
+    div[data-skill="3"]>span {
+        width: calc(30% - 2%);
+    }
+    
+    div[data-skill="1"]>span {
+        width: calc(15% - 2%);
+    }
+    
+    div[data-skill="9"]>span {
+        width: calc(90% - 2%);
+    }
+    
+    div[data-skill="5"]>span {
+        width: calc(50% - 2%);
+    }
+    
+    div[data-skill="7"]>span {
+        width: calc(70% - 2%);
+    }
+    
+    @media screen and (max-width:545px) {
+        #contact {
+            position: relative;
+        }
+        header div {
+            display: flex;
+            flex-direction: column;
+        }
+        .content #education {
+            width: 100%;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-value {
+            background-color: white;
+        }
+        .content #experiences {
+            width: 100%;
+        }
+        .content #about {
+            width: 100%;
+        }
+        .content #competencies {
+            width: 100%;
+        }
+    }
