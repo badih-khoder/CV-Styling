@@ -43,7 +43,7 @@
     .experience {
         margin-left: 0px;
         justify-content: flex-end;
-        border-right: 5px solid red;
+        border-right: 5px solid gray;
         width: 150px;
         height: 150px;
     }
@@ -57,7 +57,7 @@
         position: relative;
         left: 150px;
         bottom: -40px;
-        border-left: 5px solid red;
+        border-left: 5px solid gray;
     }
     
     .experience-description {
@@ -72,7 +72,7 @@
     }
     
     h1 {
-        border-bottom: 5px solid red;
+        border-bottom: 5px solid gray;
         position: relative;
         top: 50px;
         font-size: 80px;
@@ -104,7 +104,7 @@
     .skills {
         display: flex;
         flex-direction: row;
-        border-left: 5px solid red;
+        border-left: 5px solid gray;
         bottom: 50px;
         left: 170px;
     }
@@ -128,7 +128,7 @@
         background-size: contain;
         height: 100px;
         width: 100px;
-        margin: 20px;
+        margin: 20px
     }
     
     .contacts {
@@ -196,4 +196,93 @@
     
     .skills-secondary .skill[data-skill='7']::after {
         content: "★★★";
+    }
+    
+    @media screen and (max-width:550px) {
+        img {
+            display: none;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        body {
+            width: 100%;
+        }
+        #about>p {
+            width: 90%;
+            position: relative;
+            top: 50px;
+            border: none;
+            margin-left: 30px;
+        }
+        #competencies>h3 {
+            position: relative;
+            text-decoration: underline;
+            border: none;
+            left: 170px;
+            top: -50px;
+        }
+        #competencies {
+            position: relative;
+            top: 130px;
+            left: -150px;
+            border: none;
+            border-left: none;
+        }
+        .experience {
+            margin-left: -150px;
+            position: relative;
+            top: 30px;
+            border: none;
+        }
+        .experience-location {
+            position: relative;
+            left: 550px;
+        }
+        h3 {
+            position: relative;
+            left: 30px;
+            text-decoration: underline;
+        }
+        .experience-date {
+            position: relative;
+            left: 550px;
+        }
+        .experience-description {
+            position: relative;
+            width: 700px;
+            left: 170px;
+            width: 500px;
+        }
+        .experience-type {
+            position: relative;
+            top: 40px;
+            left: 170px;
+            color: #008080;
+        }
+        .contact-email {
+            position: relative;
+            left: -150px;
+            bottom: -200px;
+        }
+        .contact-phone {
+            position: relative;
+            left: -150px;
+            width: 60px;
+            bottom: -110px;
+            bottom: -220px;
+        }
+        .contact-github {
+            position: relative;
+            left: -150px;
+            bottom: -190px;
+        }
+        .contact-facebook {
+            position: relative;
+            left: -150px;
+            bottom: -190px;
+        }
+        .skills {
+            border: none;
+        }
     }
