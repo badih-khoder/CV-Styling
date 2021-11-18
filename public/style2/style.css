@@ -85,9 +85,8 @@
     img {
         position: relative;
         left: 950px;
-        transform: rotate(-20deg);
-        top: -90px;
-        width: 180px;
+        top: -217px;
+        width: 280px;
     }
     
     .skills-primary,
@@ -175,15 +174,15 @@
     }
     
     .skills-primary .skill[data-skill='5']::after {
-        content: "★★★";
+        content: "★★★★";
     }
     
     .skills-primary .skill[data-skill='3']::after {
-        content: "★★";
+        content: "★★★★";
     }
     
     .skills-primary .skill[data-skill='1']::after {
-        content: "★";
+        content: "★★";
     }
     
     .skills-secondary .skill[data-skill='9']::after {
@@ -195,7 +194,7 @@
     }
     
     .skills-secondary .skill[data-skill='7']::after {
-        content: "★★★";
+        content: "★★★★";
     }
     
     @media screen and (max-width:550px) {
